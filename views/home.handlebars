@@ -1,0 +1,52 @@
+<br>
+<br>
+<input type="text", id="query", placeholder="Enter a Student's Name">
+{{#each data}}
+<br>
+<article class="student-details">
+    <h3 class="student-name"> {{this.name}}</h3>
+	<p>Email: {{this.email}}</p>
+    <p>Major: {{this.major}} </p>
+	<p>GPA:  {{this.gpa}} </p>
+	<p>Courses: {{this.courses}} </p>
+    <p>Year of Graduation: {{this.year}} </p>
+</article>
+<br>
+
+{{else}}
+<article>
+    <h3>There are no student tutors yet.</h3>
+    <a href="/addStudent">Become a tutor!</a>
+</article>
+{{/each}}
+
+<p id="not" hidden="hidden">No student with that name exists.</p>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#query").keyup(function () {
+            var inputter = $(query).val().toUpperCase();
+            var number = 0;
+            $(".student-details").each(function (index, element) {
+                var name = $(element).find(".student-name").text().toUpperCase();
+                
+                if (name.search(new RegExp(inputter)) < 0) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                    number++;
+                }
+            });
+            if (number != 0) { 
+                $("#not").hide();
+            }
+            else { 
+                $("#not").show();
+            }
+        
+        });
+    });
+</script>
+

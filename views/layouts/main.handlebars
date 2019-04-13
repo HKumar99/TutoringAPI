@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+  <title>CMSC389K Final Project</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+</head>
+<h1 style="text-align: center">Students Helping Students: Crowdsourced Tutoring</h1>
+<div class="nav">
+  <div style="text-align: center">
+    <a style="padding-right:10px" href="/">Home</a>
+    <a style="padding-right:10px"  href="/api/talented">Talented Tutors</a>
+    <a style="padding-right:10px" href="/api/math">Bad GPA</a>
+    <a style="padding-right:10px" href="/api/goodgpa">Good GPA</a>
+    <a style="padding-right:10px" href="/api/cmsc330">Tutors for CMSC330</a>
+    <a style="padding-right:10px" href="/api/upper">Upperclassmen Tutors</a>
+  </div>
+</div>
+
+<body>
+  <br>
+  <button style="align-items: center" type="button" id="createNew" onclick = "location.href = '/addStudent';">Become a Tutor</button> {{{body}}}
+  <script style="align-items: center" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script>
+    $('#createNew').on('click', function() {
+      console.log("hi");
+    });
+  </script>
+</body>
+
+</html>

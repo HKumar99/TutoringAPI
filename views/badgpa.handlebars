@@ -1,0 +1,11 @@
+<h2>The Questionable Tutors</h2>
+<p>These are students that...you may want to avoid. They have GPAs lower than 3. Check them out...with caution!</p>
+<br>
+{{#each mathem}}
+<article class="matched">
+    <h3>{{this.name}}</h3>
+    <p>Email: {{this.email}}</p>
+    <p>GPA: {{this.gpa}}</p>
+    <br>
+</article>
+{{/each}}

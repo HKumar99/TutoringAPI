@@ -1,0 +1,31 @@
+
+<article>
+    <form method="POST" action="/addStudent">
+        <div class="input-field">
+            <label>Student Name:</label>
+            <input type="text" name="name" size="50" placeholder="Your Name">
+        </div>
+         <div class="input-field">
+            <label>Email:</label>
+            <input type="email" name="email" size="50" placeholder="Your Email">
+        </div>
+        <div class="input-field">
+            <label>Major:</label>
+            <input type="text" name="major" size="50" placeholder="Your Major">
+        </div>
+        <div class="input-field">
+            <label>GPA:</label>
+            <textarea type="number" name="gpa" min = "2.00" max = "4.00" step = ".01" placeholder="GPA"></textarea>
+        </div>
+        <div class="input-field">
+            <label>Courses:</label>
+            <textarea type="text" name="courses" size="50" placeholder="CMSC351, MATH140, ... (seperate by comma)"></textarea>
+        </div>
+        <div class="input-field">
+            <label>Year of Graduation:</label>
+            <textarea type="number" name="year" step="1" size="50" max="2025" min="2019" placeholder="Year"></textarea>
+        </div>
+
+        <button type="submit">Create Tutor</button>
+    </form>
+</article>

@@ -1,0 +1,13 @@
+<h2>Talented Tutors</h2>
+<p>These are students that are available to tutor for 3 or more classes. Check them out!</p>
+<br>
+<div>
+{{#each talentPool}}
+<article class="matched">
+    <h3>{{this.name}}</h3>
+    <p>Email: {{this.email}}</p>
+    <p>Courses: {{this.courses}}</p>
+    <br>
+</article>
+{{/each}}
+</div>

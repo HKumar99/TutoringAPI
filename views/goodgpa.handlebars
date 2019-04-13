@@ -1,0 +1,11 @@
+<h2>Educated Tutors</h2>
+<p>These are top-class student tutors with GPAs higher than 3.5. Check them out!</p>
+<br>
+{{#each goodstuds}}
+<article class="matched">
+    <h3>{{this.name}}</h3>
+    <p>Email: {{this.email}}</p>
+    <p>GPA: {{this.gpa}}</p>
+    <br>
+</article>
+{{/each}}
